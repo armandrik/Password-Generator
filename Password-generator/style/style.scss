@@ -1,0 +1,124 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #202020;
+    font-family: 'Raleway', sans-serif;
+}
+
+.meta-container{
+    width: 60%;
+    min-width: 402px;
+    height: 50vh;
+    padding: 30px 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin: 200px auto 0 auto;
+    h1{
+        color: white;
+    }
+    .pass-value{
+        width: 100%;
+        height: 5vh;
+        padding-left: 20px;
+        outline: none;
+        border: none;
+        border-radius: 5px;
+        font-size: 24px;
+        color: #5aaa5a;
+        box-shadow: -3px 3px 0px 1px #bdbdbd;
+    }
+    p{
+        display: none;
+        color: rgb(223, 59, 92);
+        font-family: 'Raleway', sans-serif;
+        cursor: pointer;
+    }
+    .lenght{
+        width: 100%;
+        // border: 1px solid;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        label{
+            color: white;
+            font-family: 'Raleway', sans-serif;
+        }
+        #lenght{
+            width: 48px;
+            height: 32px;
+            text-align: center;
+            outline: none;
+            border-radius: 5px;
+            box-shadow: -3px 3px 0px 1px #bdbdbd;
+            border: none;
+        }
+    }
+    .generate-btn{
+        height: 5vh;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-family: 'Raleway', sans-serif;
+        background-color: #5aaa5a;
+        color: white;
+        font-size: 24px;
+        box-shadow: -3px 3px 0px 1px #447e44;
+        font-weight: bold;
+        transition: .2s;
+        letter-spacing: 3px;
+        &:active{
+            transform: translate(-3px , 3px);
+            box-shadow: none;
+        }
+    }
+    .button {
+        display: flex;
+        height: 5vh;
+        border: 2px solid #BFC0C0;
+        color: #BFC0C0;
+        text-decoration: none;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+        border-radius: 5px;
+        transition: .2s;
+        &:hover{
+            border: none;
+            border-right: 3px solid white;
+            border-left: 3px solid white;
+        }
+    }
+    #button-2 {
+        position: relative;
+        overflow: hidden;
+        cursor: pointer;
+        &:hover #slide{
+            left: 0;
+        }
+        &:hover a{
+            color: #2D3142;
+        }
+        a{
+            position: relative;
+            transition: all .35s ease-Out;
+            text-decoration: none;
+            color: #5aaa5a;
+            font-size: 20px;
+            font-weight: 600;
+        }
+        #slide {
+            width: 100%;
+            height: 100%;
+            left: -1200px;
+            background: #5aaa5a;
+            position: absolute;
+            transition: all .5s ease-Out;
+            bottom: 0;
+        }
+    }
+}
